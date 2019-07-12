@@ -1,9 +1,12 @@
 // server.js
 // where your node app starts
+require('dotenv').config();
 
+console.log(process.env.PORT);
 // init project
 var express = require('express');
 var app = express();
+
 
 // enable CORS (https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
 // so that your API is remotely testable by FCC 
